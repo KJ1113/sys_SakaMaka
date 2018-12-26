@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3498DB">
+
+        <Button
+            android:id="@+id/timeline"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/timeline1" />
+
+        <Button
+            android:id="@+id/mypage"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mypage1" />
+
+    </LinearLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu"
+        android:layout_above ="@+id/ar"/>
+
+    <LinearLayout
+        android:id="@+id/ar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#3498DB"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/arView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/push" />
+    </LinearLayout>
+
+</RelativeLayout>

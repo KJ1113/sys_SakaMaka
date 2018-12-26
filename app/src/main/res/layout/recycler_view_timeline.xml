@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/userimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/userimg" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="User"
+                    android:textSize="11pt" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="User"
+                    android:textSize="6pt"
+                    android:textColor="#8c8c8c"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/posttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="10pt" />
+
+            <ImageView
+                android:id="@+id/postimg"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/good" />
+
+            <TextView
+                android:id="@+id/like"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:text="20" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/hate" />
+
+            <TextView
+                android:id="@+id/hate"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:text="6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10pt"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/likeimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/like2" />
+
+            <Button
+                android:id="@+id/likebtn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="#3498DB"
+                android:text="좋아요"
+                android:textColor="#ffffff"
+                android:textSize="10pt" />
+
+            <ImageView
+                android:id="@+id/hateimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/hate2" />
+
+            <Button
+                android:id="@+id/hatebtn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="#EAEAEA"
+                android:text="별로에요"
+                android:textSize="10pt" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
