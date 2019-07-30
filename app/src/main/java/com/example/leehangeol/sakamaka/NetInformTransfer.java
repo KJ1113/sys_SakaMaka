@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class NetInformTransfer {
 
-    private static String ServerUrl = "http://114.129.198.105:3000";
+    private static String ServerUrl = "----------:3000";
     private String ServerResponse = null;
     private ArrayList<String> ReqBodyinform = new ArrayList<String>();
 
